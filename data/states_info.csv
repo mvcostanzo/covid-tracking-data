@@ -34,7 +34,8 @@ Starting 7/11, CT is longer reporting data on weekends.",https://data.ct.gov/cor
 DC,"Positive and Negative include both public and commercial labs. As of April 27, District of Columbia is reporting people tested.
 Total tests reported by DC dropped by about 11,000 from 5/24 to 5/25.",https://coronavirus.dc.gov/page/coronavirus-surveillance-data,,,@_DCHealth,https://coronavirus.dc.gov/,District Of Columbia,11,,false
 DE,"As of April 27, Delaware is reporting people tested.
-On April 11, Delaware revised down negatives from 10415 to 9624",https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,,,@Delaware_DHSS,https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,Delaware,10,,false
+On April 11, Delaware revised down negatives from 10415 to 9624.
+On July 25, Delaware revised down total cases, confirmed positives, and total tests.",https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,,,@Delaware_DHSS,https://dhss.delaware.gov/dhss/dph/epi/2019novelcoronavirus.html,Delaware,10,,false
 FL,"We report using the raw data provided by FDOH but we include both Florida residents and non-residents.
 On March 21, negatives jumped due to a methodology change: tests of people not investigated as PUIs are now included. 
 On March 26, the dashboard stopped including non-residents in its visible counts, but they're still tracked behind the scenes.  
@@ -92,7 +93,8 @@ MN,"Since March 23, Negative = Total - Positive.
 As of June 5, Minnesota reports specimens tested; because some people may be tested more than once, this number may be higher than the number of people tested.",https://www.health.state.mn.us/diseases/coronavirus/situation.html,,,@mnhealth,https://www.health.state.mn.us/diseases/coronavirus/index.html,Minnesota,27,,false
 MO,"Negative = Total - Positive. As of April 27, Missouri is reporting people tested.
 On July 19, Missouri revised the death down from 1130 to 1129.
-As of May 22, Missouri is separating out the numbers of people tested with PCR and antibody tests; we report the number of people tested with PCR tests. Total tests might be impacted.",https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php,https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/,,@HealthyLivingMo,https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/,Missouri,29,,false
+As of May 22, Missouri is separating out the numbers of people tested with PCR and antibody tests; we report the number of people tested with PCR tests. Total tests might be impacted.
+On July 24, MO decreased the number of deaths by 1.",https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/results.php,https://missouri-coronavirus-gis-hub-mophep.hub.arcgis.com/,,@HealthyLivingMo,https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/,Missouri,29,,false
 MP,"On July 9, MP started providing weekly updates of test totals in units of People. As of July 23rd, we are using the people-wise test totals as the default unit. This caused a perceived drop in the number of tests on 7/23. We will adjust the historic time series to people units shortly.",https://www.chcc.gov.mp/coronavirusinformation.php,https://cnmichcc.maps.arcgis.com/apps/opsdashboard/index.html#/4061b674fc964efe84f7774b7979d2b5,,@cnmichcc,https://www.chcc.gov.mp/coronavirusinformation.php,Northern Mariana Islands,69,,false
 MS,"Negatives = Total - Positives.
 Hospitalizations are calculated by calculating multiplying % of hospitalized times total cases, pending clarification from the state. Recoveries are estimated, and updated twice weekly.
