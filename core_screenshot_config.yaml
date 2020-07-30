@@ -97,12 +97,34 @@ secondary:
       page.done();
     message: custom click logic for MP secondary dashboard
 
+  PA:
+    overseerScript: >
+      page.manualWait();
+      await page.waitForSelector("#ember65");
+      page.click("#ember65"); 
+      await page.waitForDelay(30000);
+      page.done();
+    message: custom click logic for PA secondary dashboard
+
   TN:
     file: pdf
-    message: downloading PDF for TX secondary
+    message: downloading PDF for TN secondary
+
+  TX:
+    file: xlsx
+    message: downloading Excel for TX secondary
 
   WA:
     overseerScript: page.manualWait(); await page.waitForDelay(30000); page.done();
     message: waiting 30 sec to load WA secondary
 
 tertiary:
+
+  NC:
+    overseerScript: >
+      page.manualWait();
+      await page.waitForSelector("#\\[Parameters\\]\\.\\[Parameter\\ 7\\]_2 input");
+      page.click("#\\[Parameters\\]\\.\\[Parameter\\ 7\\]_2 input"); 
+      await page.waitForDelay(10000);
+      page.done();
+    message: crazy clicking for NC tertiary, waiting 10 seconds
