@@ -104,21 +104,32 @@ secondary:
     message: custom click logic for AL secondary dashboard
 
   AR:
-    overseerScript: page.manualWait(); await page.waitForDelay(30000); page.done();
+    overseerScript: 
+      page.manualWait(); 
+      await page.waitForDelay(30000); 
+      page.done();
     message: waiting 30 sec to load AR secondary
 
   ID:
     overseerScript: >
-      page.manualWait(); await page.waitForSelector("#tabZoneId10");
-      await page.hover("#tabZoneId10"); page.done();
+      page.manualWait(); 
+      await page.waitForSelector("#tabZoneId10");
+      await page.hover("#tabZoneId10"); 
+      page.done();
     message: custom mouseover logic for ID secondary dashboard
 
   IN:
-    overseerScript: page.manualWait(); await page.waitForDelay(30000); page.done();
+    overseerScript: 
+      page.manualWait(); 
+      await page.waitForDelay(30000); 
+      page.done();
     message: waiting 30 sec to load IN secondary
 
   NJ:
-    overseerScript: page.manualWait(); await page.waitForDelay(30000); page.done();
+    overseerScript: 
+      page.manualWait(); 
+      await page.waitForDelay(30000); 
+      page.done();
     message: waiting 30 sec to load NJ secondary
 
   PA:
@@ -139,10 +150,26 @@ secondary:
     message: downloading Excel for TX secondary
 
   WA:
-    overseerScript: page.manualWait(); await page.waitForDelay(30000); page.done();
+    overseerScript: 
+      page.manualWait(); 
+      await page.waitForDelay(30000); 
+      page.done();
     message: waiting 30 sec to load WA secondary
 
 tertiary:
+
+  AR:
+    renderSettings:
+      clipRectangle:
+        width: 1400
+        height: 1400
+    overseerScript: >
+      page.manualWait();
+      await page.waitForSelector("span.ember-view.tab-title:nth-of-type(4)");
+      page.click("span.ember-view.tab-title:nth-of-type(4)");
+      await page.waitForDelay(10000);
+      page.done();
+    message: clicking on "Tests" tab for AR tertiary
 
   IA:
     overseerScript: page.manualWait(); await page.waitForDelay(60000); page.done();
@@ -184,8 +211,26 @@ quaternary:
     overseerScript: page.manualWait(); await page.waitForDelay(60000); page.done();
     message: wait for IA quaternary
 
+  PR:
+    overseerScript: 
+      await page.waitForNavigation({waitUntil:"domcontentloaded"}); 
+      await page.waitForSelector("#ember906");
+      page.click("#ember906");
+      page.done();
+    message: click button for PR recoveries ("Convalecientes")
+
+
 quinary:
 
   IA:
     overseerScript: page.manualWait(); await page.waitForDelay(60000); page.done();
     message: wait for IA quinary
+
+  PR:
+    overseerScript: 
+      await page.waitForNavigation({waitUntil:"domcontentloaded"}); 
+      await page.waitForSelector("#ember772");
+      page.click("#ember772");
+      page.done();
+    message: click button for PR confirmed Deaths ("Muertes Confirmades")
+
